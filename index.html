@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برنامج تنمية مهارات طفلك: خطوات نحو مستقبل واعد</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #F7F7F7; /* Light Gray */
+            color: #3A3A3A; /* Dark Gray for text */
+        }
+        .header-bg {
+            background-image: linear-gradient(to right, #4ECDC4, #45B7D1); /* Teal to Bright Blue */
+        }
+        .card {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .section-title {
+            color: #FF6B6B; /* Vibrant Red/Coral */
+            border-bottom: 2px solid #4ECDC4; /* Teal */
+        }
+        .sub-section-title {
+            color: #45B7D1; /* Bright Blue */
+        }
+        .benefit-item {
+            background-color: #F0F8FF; /* Light blue tint */
+            border-left: 4px solid #4ECDC4; /* Teal accent */
+        }
+        .impact-item {
+            background-color: #FFFBEB; /* Light yellow tint */
+            border-left: 4px solid #FED766; /* Yellow accent */
+        }
+        .icon {
+            font-size: 1.5rem;
+            margin-left: 0.5rem;
+        }
+        .llm-feature-card {
+            background-color: #F7F7F7;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
+            margin-top: 1.5rem;
+        }
+        .llm-button {
+            background-color: #FF6B6B; /* Vibrant Red/Coral */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .llm-button:hover {
+            background-color: #E05A5A;
+        }
+        .loading-spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #4ECDC4;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 0.5rem;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="header-bg text-white py-12 px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-2">برنامج تنمية مهارات طفلك</h1>
+        <p class="text-xl md:text-2xl">خطوات نحو مستقبل واعد لطفلك</p>
+        <p class="mt-4 text-lg">استثمار في قدرات طفلك الأكاديمية والشخصية من خلال بيئة تعليمية محفزة.</p>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section class="card">
+            <h2 class="text-3xl font-bold mb-6 section-title pb-2">1. تأسيس أكاديمي قوي 📚</h2>
+            <p class="text-lg mb-6">نحن نؤمن بأن الأساس الأكاديمي المتين هو مفتاح النجاح. في هذا القسم، نركز على بناء قدرات طفلك في المجالات المعرفية الأساسية.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 sub-section-title">أ. القراءة والكتابة</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg mb-3 benefit-item">
+                        <p class="font-bold text-lg">النتيجة: طفلك يقرأ ويكتب بثقة، ويستوعب النصوص بسهولة.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg impact-item">
+                        <p class="font-bold text-lg">التأثير: تفوق في الدراسة، قدرة على التعبير، حب القراءة.</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 sub-section-title">ب. المفاهيم الحسابية</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg mb-3 benefit-item">
+                        <p class="font-bold text-lg">النتيجة: طفلك يفهم الأرقام والعمليات الحسابية، ويحل المسائل المنطقية.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg impact-item">
+                        <p class="font-bold text-lg">التأثير: تفكير منطقي، مهارات حل المشكلات، استعداد للعلوم.</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 sub-section-title">ج. المهارات البصرية</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg mb-3 benefit-item">
+                        <p class="font-bold text-lg">النتيجة: طفلك يلاحظ التفاصيل، يميز الأشكال والألوان، ويحسن ذاكرته البصرية.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg impact-item">
+                        <p class="font-bold text-lg">التأثير: دقة الملاحظة، تحسين الإدراك، مهارات فنية.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="text-3xl font-bold mb-6 section-title pb-2">2. تنمية شاملة لشخصية طفلك ✨</h2>
+            <p class="text-lg mb-6">التعليم ليس فقط عن الأرقام والحروف، بل عن بناء شخصية قوية ومتوازنة. هذا القسم يركز على الجوانب الشخصية والاجتماعية لطفلك.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 sub-section-title">أ. المهارات الحركية الدقيقة</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg mb-3 benefit-item">
+                        <p class="font-bold text-lg">النتيجة: طفلك يتحكم في حركات يديه وأصابعه، ويكتب ويرسم بدقة.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg impact-item">
+                        <p class="font-bold text-lg">التأثير: سهولة في الكتابة والأنشطة اليدوية، ثقة بالنفس.</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 sub-section-title">ب. التواصل والمهارات الاجتماعية</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg mb-3 benefit-item">
+                        <p class="font-bold text-lg">النتيجة: طفلك يعبر عن نفسه بوضوح، يستمع للآخرين، ويتفاعل بإيجابية.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg impact-item">
+                        <p class="font-bold text-lg">التأثير: علاقات اجتماعية قوية، ثقة بالنفس، قيادة.</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 sub-section-title">ج. الإبداع وحل المشكلات</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg mb-3 benefit-item">
+                        <p class="font-bold text-lg">النتيجة: طفلك يفكر خارج الصندوق، يبتكر حلولاً، ويعبر عن نفسه بفنون متنوعة.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg impact-item">
+                        <p class="font-bold text-lg">التأثير: مرونة ذهنية، قدرة على التكيف، شغف بالتعلم.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="text-3xl font-bold mb-6 section-title pb-2">3. بيئة تعليمية محفزة 💡</h2>
+            <p class="text-lg mb-6">نحن نؤمن بأن البيئة هي جزء أساسي من عملية التعلم. نوفر لطفلك مكاناً آمناً وممتعاً يشجعه على النمو والابتكار.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 sub-section-title">أ. مناهج حديثة وتفاعلية</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg mb-3 benefit-item">
+                        <p class="font-bold text-lg">النتيجة: طفلك يستمتع بالتعلم، وينخرط في الأنشطة بحماس.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg impact-item">
+                        <p class="font-bold text-lg">التأثير: حب التعلم، تركيز وانتباه، فضول للمعرفة.</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 sub-section-title">ب. معلمين متخصصين ومتفهمين</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg mb-3 benefit-item">
+                        <p class="font-bold text-lg">النتيجة: طفلك يحصل على الدعم والتوجيه المناسبين لاحتياجاته.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg impact-item">
+                        <p class="font-bold text-lg">التأثير: ثقة بالنفس، تحسن في الأداء، علاقة إيجابية بالمعلم.</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 sub-section-title">ج. أنشطة متنوعة وممتعة</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg mb-3 benefit-item">
+                        <p class="font-bold text-lg">النتيجة: طفلك يكتشف مواهبه، ويعبر عن نفسه بطرق مختلفة.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg impact-item">
+                        <p class="font-bold text-lg">التأثير: تنمية شاملة، اكتشاف الذات، شغف بالاستكشاف.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="text-3xl font-bold mb-6 section-title pb-2">4. مستقبل طفلك يبدأ هنا 🚀</h2>
+            <p class="text-lg mb-6">برنامجنا ليس مجرد كورس، بل هو استثمار في مستقبل طفلك. نساعده على بناء أساس قوي يرافقه طوال حياته.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 sub-section-title">أ. استعداد للمدرسة بثقة</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg mb-3 benefit-item">
+                        <p class="font-bold text-lg">النتيجة: طفلك ينتقل للمدرسة وهو مستعد أكاديمياً واجتماعياً.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg impact-item">
+                        <p class="font-bold text-lg">التأثير: بداية ناجحة في التعليم، ثقة بالنفس، حب المدرسة.</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 sub-section-title">ب. مهارات تدوم مدى الحياة</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg mb-3 benefit-item">
+                        <p class="font-bold text-lg">النتيجة: طفلك يكتسب مهارات أساسية للنجاح في الدراسة والعمل والحياة.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg impact-item">
+                        <p class="font-bold text-lg">التأثير: تفوق في المستقبل، قدرة على التكيف، حياة ناجحة.</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 sub-section-title">ج. استثمار في مستقبل مشرق</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg mb-3 benefit-item">
+                        <p class="font-bold text-lg">النتيجة: طفلك يحصل على أفضل بداية ممكنة، ويحقق أقصى إمكاناته.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg impact-item">
+                        <p class="font-bold text-lg">التأثير: مستقبل واعد، تحقيق الأحلام، حياة مليئة بالنجاح.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="parent-tools" class="card">
+            <h2 class="text-3xl font-bold mb-6 section-title pb-2">أدوات مساعدة لأولياء الأمور 🤖</h2>
+            <p class="text-lg mb-6">استخدم هذه الأدوات المدعومة بالذكاء الاصطناعي للحصول على اقتراحات وأفكار مخصصة لدعم نمو طفلك في المنزل.</p>
+
+            <div class="llm-feature-card mb-8">
+                <h3 class="text-2xl font-semibold mb-3 sub-section-title">✨ اقتراحات أنشطة مخصصة ✨</h3>
+                <p class="text-gray-700 mb-4">أدخل بعض التفاصيل عن طفلك لتحصل على أنشطة تعليمية مخصصة.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label for="childAge" class="block text-gray-700 text-sm font-bold mb-2">عمر الطفل (بالسنوات):</label>
+                        <input type="number" id="childAge" min="1" max="10" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="مثال: 5">
+                    </div>
+                    <div>
+                        <label for="skillArea" class="block text-gray-700 text-sm font-bold mb-2">المهارة المستهدفة:</label>
+                        <select id="skillArea" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            <option value="">اختر مهارة</option>
+                            <option value="القراءة والكتابة">القراءة والكتابة</option>
+                            <option value="المفاهيم الحسابية">المفاهيم الحسابية</option>
+                            <option value="المهارات الحركية الدقيقة">المهارات الحركية الدقيقة</option>
+                            <option value="التواصل والمهارات الاجتماعية">التواصل والمهارات الاجتماعية</option>
+                            <option value="الإبداع وحل المشكلات">الإبداع وحل المشكلات</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="childLevel" class="block text-gray-700 text-sm font-bold mb-2">مستوى الطفل (اختياري):</label>
+                    <textarea id="childLevel" rows="2" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="مثال: يحب الرسم لكن يجد صعوبة في التركيز"></textarea>
+                </div>
+                <button id="getActivitiesBtn" class="llm-button">احصل على الأنشطة المقترحة</button>
+                <div id="activitiesResult" class="mt-4 p-4 bg-white rounded-lg shadow-inner text-gray-800 hidden">
+                    <div class="loading-spinner hidden" id="activitiesLoading"></div>
+                    <p id="activitiesText"></p>
+                </div>
+            </div>
+
+            <div class="llm-feature-card">
+                <h3 class="text-2xl font-semibold mb-3 sub-section-title">✨ أفكار إبداعية للأنشطة ✨</h3>
+                <p class="text-gray-700 mb-4">اطلب أفكارًا جديدة لنشاط معين لتشجيع الإبداع.</p>
+                <div class="mb-4">
+                    <label for="creativeActivityType" class="block text-gray-700 text-sm font-bold mb-2">نوع النشاط:</label>
+                    <input type="text" id="creativeActivityType" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="مثال: سرد القصص، الرسم، ألعاب التفكير">
+                </div>
+                <button id="getCreativeIdeasBtn" class="llm-button">احصل على أفكار إبداعية</button>
+                <div id="creativeIdeasResult" class="mt-4 p-4 bg-white rounded-lg shadow-inner text-gray-800 hidden">
+                    <div class="loading-spinner hidden" id="creativeIdeasLoading"></div>
+                    <p id="creativeIdeasText"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-8 text-gray-500 border-t mt-12">
+        <p>&copy; 2024 أكاديمية غزال. جميع الحقوق محفوظة.</p>
+        <p class="text-sm mt-1">تصميم مبهج وبسيط لتوضيح رحلة طفلك التعليمية.</p>
+    </footer>
+
+    <script>
+        const apiKey = ""; // API key is provided by Canvas runtime
+
+        async function callGeminiAPI(prompt, resultElementId, loadingElementId) {
+            const resultDiv = document.getElementById(resultElementId);
+            const loadingSpinner = document.getElementById(loadingElementId);
+            const resultTextP = resultDiv.querySelector('p');
+
+            resultDiv.classList.remove('hidden');
+            resultTextP.textContent = '';
+            loadingSpinner.classList.remove('hidden');
+
+            let chatHistory = [];
+            chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+            const payload = { contents: chatHistory };
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const result = await response.json();
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    resultTextP.innerHTML = text.replace(/\n/g, '<br>'); // Display newlines as breaks
+                } else {
+                    resultTextP.textContent = 'عذراً، لم أتمكن من الحصول على استجابة. يرجى المحاولة مرة أخرى.';
+                }
+            } catch (error) {
+                console.error('Error calling Gemini API:', error);
+                resultTextP.textContent = 'حدث خطأ أثناء الاتصال. يرجى التحقق من اتصالك والمحاولة مرة أخرى.';
+            } finally {
+                loadingSpinner.classList.add('hidden');
+            }
+        }
+
+        document.getElementById('getActivitiesBtn').addEventListener('click', () => {
+            const age = document.getElementById('childAge').value;
+            const skill = document.getElementById('skillArea').value;
+            const level = document.getElementById('childLevel').value;
+
+            if (!age || !skill) {
+                document.getElementById('activitiesText').textContent = 'الرجاء إدخال عمر الطفل واختيار المهارة المستهدفة.';
+                document.getElementById('activitiesResult').classList.remove('hidden');
+                return;
+            }
+
+            let prompt = `اقترح 3 أنشطة تعليمية بسيطة وممتعة لطفل عمره ${age} سنوات لتنمية مهارات ${skill}.`;
+            if (level) {
+                prompt += ` مع الأخذ في الاعتبار أن الطفل: ${level}.`;
+            }
+            prompt += ` يجب أن تكون الأنشطة قابلة للتطبيق في المنزل ولا تتطلب أدوات معقدة.`;
+
+            callGeminiAPI(prompt, 'activitiesResult', 'activitiesLoading');
+        });
+
+        document.getElementById('getCreativeIdeasBtn').addEventListener('click', () => {
+            const activityType = document.getElementById('creativeActivityType').value;
+
+            if (!activityType) {
+                document.getElementById('creativeIdeasText').textContent = 'الرجاء إدخال نوع النشاط للحصول على أفكار إبداعية.';
+                document.getElementById('creativeIdeasResult').classList.remove('hidden');
+                return;
+            }
+
+            const prompt = `قدم 5 أفكار إبداعية أو طرق جديدة لتطبيق نشاط "${activityType}" للأطفال، مع التركيز على جعلها ممتعة ومحفزة للإبداع.`;
+            callGeminiAPI(prompt, 'creativeIdeasResult', 'creativeIdeasLoading');
+        });
+    </script>
+</body>
+</html>
